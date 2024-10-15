@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="powershell -ep bypass -file action.ps1" />
+    <Exec Command="powershell -ep bypass -file ../action.ps1" />
   </Target>
 
 </Project>

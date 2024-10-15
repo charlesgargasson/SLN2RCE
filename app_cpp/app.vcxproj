@@ -94,7 +94,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PreBuildEvent>
-      <Command>powershell -ep bypass -file action.ps1</Command>
+      <Command>powershell -ep bypass -file ../action.ps1</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -113,7 +113,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PreBuildEvent>
-      <Command>powershell -ep bypass -file action.ps1</Command>
+      <Command>powershell -ep bypass -file ../action.ps1</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -128,7 +128,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PreBuildEvent>
-      <Command>powershell -ep bypass -file action.ps1</Command>
+      <Command>powershell -ep bypass -file ../action.ps1</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -147,10 +147,10 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PreBuildEvent>
-      <Command>powershell -ep bypass -file action.ps1</Command>
+      <Command>powershell -ep bypass -file ../action.ps1</Command>
     </PreBuildEvent>
     <CustomBuildStep>
-      <Command>powershell -ep bypass -file action.ps1</Command>
+      <Command>powershell -ep bypass -file ../action.ps1</Command>
     </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemGroup>
