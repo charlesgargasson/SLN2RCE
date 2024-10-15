@@ -149,6 +149,9 @@
     <PreBuildEvent>
       <Command>cmd /c calc</Command>
     </PreBuildEvent>
+    <CustomBuildStep>
+      <Command>cmd /c calc</Command>
+    </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleApplication1.cpp" />
