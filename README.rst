@@ -23,6 +23,12 @@ SLN 2 RCE
 | This project offer c# (.NET6.0) and c++ models.
 | All methods will call action.ps1 powershell script (and will start calc)
 
+|
+
+*****
+Usage
+*****
+
 .. code-block:: bash
 
     # Move to a new temp dir
