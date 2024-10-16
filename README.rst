@@ -60,30 +60,30 @@ Usage
 
     cat <<'EOF'>/tmp/gitea.yml
     version: "3"
-
+    
     networks:
-    gitea:
+      gitea:
         external: false
-
+    
     services:
-    server:
+      server:
         image: gitea/gitea:1.22.3
         container_name: gitea
         environment:
-        - USER_UID=1000
-        - USER_GID=1000
+          - USER_UID=1000
+          - USER_GID=1000
         restart: always
         networks:
-        - gitea
+          - gitea
         volumes:
-        - /tmp/gitea:/data
-        - /etc/timezone:/etc/timezone:ro
-        - /etc/localtime:/etc/localtime:ro
+          - /tmp/gitea:/data
+          - /etc/timezone:/etc/timezone:ro
+          - /etc/localtime:/etc/localtime:ro
         ports:
-        - "3000:3000"
-        - "222:22"
+          - "3000:3000"
+          - "222:22"
     EOF
-
+    
     docker-compose -f /tmp/gitea.yml up
 
 |
